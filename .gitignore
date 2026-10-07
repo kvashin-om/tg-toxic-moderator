@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# uv
+.uv/
+
+# Локальные настройки
+.env
+!.env.example
+config.local.yaml
+config.local.yml
+
+# Модели (большие файлы) — папка трекается, содержимое игнорируется
+models/*
+!models/.gitkeep
+
+# Логи
+logs/
+!logs/.gitkeep
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Кэши инструментов
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Базы данных (если появятся)
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker
+docker-compose.override.yml
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

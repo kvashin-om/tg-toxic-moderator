@@ -1,0 +1,8 @@
+services:
+  bot:
+    build: .
+    image: tg-toxic-moderator:v1.0
+    env_file: .env
+    volumes:
+      - ./models:/app/models:ro
+    restart: unless-stopped
